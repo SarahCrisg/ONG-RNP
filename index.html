@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNP - ONG HIV/AIDS e Autismo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones FontAwesome para o WhatsApp e Auto-falante -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- VLibras Widget -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top"></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-ribbon text-red"></i>
+                <span class="logo-text">RNP</span>
+            </div>
+            <nav>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#como-ajudar">Como Ajudar</a>
+                <a href="#endereco">Endereço</a>
+            </nav>
+            <button id="btn-audio" class="btn-audio">
+                <i class="fa-solid fa-volume-high"></i> <span>Ouvir Página</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="tagline">DEZEMBRO VERMELHO - CONSCIENTIZAÇÃO E CUIDADO</p>
+                <h1 class="read-target">Ninguém precisa enfrentar isso sozinho.</h1>
+                <p class="read-target text-muted">Acolhemos com respeito e sem julgamentos pessoas que vivem com HIV/AIDS e pessoas autistas, oferecendo apoio emocional, informação e uma rede de cuidado que abraça cada história.</p>
+                <div class="hero-btns">
+                    <a href="#como-ajudar" class="btn btn-primary">Faça uma Doação</a>
+                    <a href="#quem-somos" class="btn btn-secondary">Conheça nossa missão</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=600" alt="Grupo de voluntários e pessoas sorrindo unidas">
+            </div>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos" class="quem-somos">
+        <div class="container qm-container">
+            <div class="qm-image">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=600" alt="Duas pessoas conversando em um ambiente acolhedor">
+            </div>
+            <div class="qm-content">
+                <p class="section-tag">QUEM SOMOS</p>
+                <h2 class="read-target">Uma rede de cuidado feita de pessoas, para pessoas.</h2>
+                <p class="read-target text-muted">O Laço de Apoio nasceu da convicção de que dignidade não se negocia. Apoiamos pessoas que vivem com HIV/AIDS e pessoas autistas, visando quebrar o estigma, garantir acesso a informação confiável e fortalecer o adesão ao tratamento com escuta e afeto.</p>
+                <p class="read-target text-muted">Caminhamos também ao lado de pessoas autistas e suas famílias, promovendo inclusão, respeito às diferentes formas de comunicação e a construção de ambientes verdadeiramente acessíveis. Aqui, cada pessoa é recebida como protagonista da própria história.</p>
+                
+                <div class="cards-caracteristicas">
+                    <div class="card-item">
+                        <i class="fa-solid fa-heart text-red"></i>
+                        <div>
+                            <h3>Acolhimento</h3>
+                            <p class="read-target">Escuta ativa e suporte emocional contínuo.</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <i class="fa-solid fa-circle-info text-red"></i>
+                        <div>
+                            <h3>Informação</h3>
+                            <p class="read-target">Orientação clara sobre saúde e direitos.</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <i class="fa-solid fa-universal-access text-red"></i>
+                        <div>
+                            <h3>Inclusão</h3>
+                            <p class="read-target">Ambientes acessíveis e livres de preconceito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO AJUDAR / DOAÇÕES -->
+    <section id="como-ajudar" class="como-ajudar">
+        <div class="container text-center">
+            <p class="section-tag">COMO AJUDAR</p>
+            <h2 class="read-target">Sua doação vira acolhimento real</h2>
+            <p class="read-target text-muted max-w-md">Cada contribuição sustenta atendimentos, oficinas e ações de conscientização. Escolha a forma que for melhor para você.</p>
+            
+            <div class="grid-doacao">
+                <!-- PIX -->
+                <div class="card-doacao highlight">
+                    <h3>Doação via PIX</h3>
+                    <p class="read-target text-muted">Rápido, seguro e direto. Copie a chave abaixo e doe pelo seu banco.</p>
+                    <div class="pix-box">
+                        <span id="pix-chave">doe@lacodeapoio.org.br</span>
+                    </div>
+                    <button id="btn-copiar-pix" class="btn btn-primary w-full">Copiar Chave PIX</button>
+                </div>
+
+                <!-- Transferência -->
+                <div class="card-doacao">
+                    <h3>Transferência Bancária</h3>
+                    <table class="dados-bancarios">
+                        <tr><td>Banco</td><td><strong>260 - Nu Pagamentos</strong></td></tr>
+                        <tr><td>Agência</td><td><strong>0001</strong></td></tr>
+                        <tr><td>Conta</td><td><strong>12345678-9</strong></td></tr>
+                        <tr><td>Titular</td><td><strong>Assoc. Laço de Apoio</strong></td></tr>
+                        <tr><td>CNPJ</td><td><strong>12.345.678/0001-90</strong></td></tr>
+                    </table>
+                </div>
+
+                <!-- Voluntariado -->
+                <div class="card-doacao">
+                    <h3>Seja Voluntário(a)</h3>
+                    <p class="read-target text-muted">Doe seu tempo e talento. Procuramos pessoas para acolhimento, oficinas, comunicação e administração.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5534999999999&text=Ol%C3%A1!%20Gostaria%20de%20me%20cadastrar%20como%20volunt%C3%A1rio%20na%20ONG." target="_blank" class="btn btn-secondary w-full" style="margin-top: 2rem; display: inline-block; text-align: center;">Quero Participar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENDEREÇO E CONTATO -->
+    <section id="endereco" class="endereco">
+        <div class="container endereco-container">
+            <div class="endereco-info">
+                <p class="section-tag">CONTATO E ENDEREÇO</p>
+                <h2 class="read-target">Venha nos visitar</h2>
+                <div class="info-list">
+                    <p class="read-target"><strong>Endereço:</strong> Rua Ya Nasso, 376 <br>Bairro Planalto, Uberlândia — MG<br>CEP 38413-156</p>
+                    <p class="read-target"><strong>Horário de Funcionamento:</strong> Segunda a sexta, das 9h às 18h<br>Sábados, das 9h às 13h</p>
+                    <p class="read-target"><strong>Telefone:</strong> (34) 3216-3181</p>
+                    <p class="read-target"><strong>E-mail:</strong> contato@lacodeapoio.org.br</p>
+                </div>
+                <!-- Link real do v0 simulando o Maps -->
+                <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Ver no Google Maps</a>
+            </div>
+            <div class="endereco-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.874223841858!2d-48.31273962479815!3d-18.9369605822392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44484f2806cf7%3A0xd41f554879dde415!2sRede%20Nacional%20de%20Pessoas%20Vivendo%20Com%20Hiv%20Aids!5e0!3m2!1spt-BR!2sbr!4v1781018854802!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Laço de Apoio</h3>
+                <p>Acolhimento e inclusão para pessoas com HIV/AIDS e pessoas autistas.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links rápidos</h4>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#como-ajudar">Como Ajudar</a>
+                <a href="#endereco">Endereço</a>
+            </div>
+            <div class="footer-contato">
+                <h4>Fale Conosco</h4>
+                <p>(34) 3216-3181</p>
+                <p>contato@lacodeapoio.org.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Associação Laço de Apoio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://api.whatsapp.com/send?phone=5534999999999&text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20posso%20ajudar%20ou%20receber%20apoio%20da%20ONG." class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts de Acessibilidade Libras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Script principal compilado -->
+    <script src="app.js"></script>
+</body>
+</html>
